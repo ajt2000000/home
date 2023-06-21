@@ -1,68 +1,79 @@
-<script async src="https://cse.google.com/cse.js?cx=448eca1703a2948a7"></script><div class="gcse-search"></div><style>.search-form {
-  position: relative;
-
-  .search-input {
-    background: rgba(#aaabd2, .17);
-    border: none;
-    border-radius: 3px;
-    width: 270px;
-    height: 45px;
-    color: #7c7eba;
-    padding: 0 40px 0 10px;
-
-    &::placeholder {
-      font: {
-        size: 14px;
-        weight: 500;
-      }
-
-      line-height: 1.85;
-      letter-spacing: .05em;
-      color: #AAAAAA;
-    }
-  }
+<script async src="https://cse.google.com/cse.js?cx=448eca1703a2948a7"></script><div class="gcse-search"></div>
+<style type="text/css">
+section
+{
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #CCC;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
 }
-
-.search-btn {
-  // ボタンの装飾を非表示
-  border: none;
-  background: unset;
-  
-  // 上下中央に
-  vertical-align: middle;
-  
-  // 疑似要素にFont Awesomeのアイコンを設置
-  position: relative;
-  &::before {
-    position: absolute;
-    content: "\f002";
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -2em;
-    color: #ddd;
-
-    font: {
-      family: "Font Awesome 5 Free";
-      weight: 900;
-      size: 21px;
-    }
-  }
+ 
+/** 外枠に色を付けて角丸にする */
+.gsc-control-cse
+{
+	margin: 0px !important;
+	padding: 0px !important;
+	border: 2px solid #00a0e9 !important;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 }
-
-// 無関係
-.ttl {
-  font-family: "TsukuARdGothic-Regular", sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: .05em;
-  color: #7c7eba;
-  text-align: left;
-  border-left: 2px solid #db97c7;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-  padding: 5px 10px;
+ 
+/** 外枠内側のマージンを0にする */
+.gsc-search-box
+{
+	margin: 0px !important;
 }
-  </style>
+ 
+ 
+/** キーワード入力部分のボーダーを消し、角丸にする */
+.gsc-input-box 
+{
+    border: none !important;
+	border-radius: 30px !important;
+	-webkit-border-radius: 30px !important;
+	-moz-border-radius: 30px !important;
+}
+/** キーワード入力部分の左側に20ピクセル余白を入れる */
+.gsib_a
+{
+	padding-left: 20px !important;
+}
+/** 検索ボタンを無色透明にし、線を消す */
+.gsc-search-button-v2
+{
+	margin: 0px !important;
+	padding-top: 12px !important;
+	padding-bottom: 13px !important;
+	padding-right: 14px !important;
+	padding-left: 14px !important;
+	background-color: transparent !important;
+	color: #4990c8 !important;
+	border-top-style: none !important;
+	border-right-style: none !important;
+	border-bottom-style: none !important;
+	border-left-style: none !important;
+	cursor:pointer;
+}
+/** 検索ボタンのアイコンの色と大きさを設定 */
+.gsc-search-button-v2 svg 
+{
+    fill: #00a0e9!important;
+    width: 20px;
+    height: 20px;
+} 
+/** placeholderの色設定 */
+input:placeholder-shown {    color: #bababa; }
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+input::-webkit-input-placeholder {    color: #bababa; }
+/* Firefox 18- */
+input:-moz-placeholder {    color: #bababa; opacity: 1; }
+/* Firefox 19+ */
+input::-moz-placeholder {   color: #bababa; opacity: 1; }
+/* IE 10+ */
+input:-ms-input-placeholder {   color: #bababa !important; }
+</style>
